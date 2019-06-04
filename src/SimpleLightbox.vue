@@ -24,7 +24,6 @@
 </template>
 
 <script>
-// Based on https://github.com/am283721/vue-my-photos
 export default {
   props: {
     prefix: {

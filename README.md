@@ -1,29 +1,80 @@
 # vue-simple-lightbox
+This a simple and minimalistic zero-dependency Vue.js lightbox. The only aim is to fill the screen with a single image while dimming the surroundings. That's it.
 
-## Project setup
-```
-npm install
-```
+If you seek Lightbox component with navigation and customizable controls, this component is not a good choice.
+On the other hand, if you only need to highlight a single image at any given time, after a click for example, that this is a way to go.
 
-### Compiles and hot-reloads for development
+## Getting started
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+npm install @elision/vue-simple-lighbox
 ```
 
-### Run your tests
-```
-npm run test
+## Usage
+You can include the component anywhere within the template. Just make sure that the `ref` attribute is present.
+
+```vue
+<template>
+    <div>
+    // Some code
+
+    <simple-lightbox ref="lightbox"/>
+    </div>
+</template>
+
+import SimpleLightbox from 'vue-simple-lightbox'
+
+/* @vue/component */
+export default {
+  components: {
+    // ...
+    SimpleLightbox,
+  },
+}
 ```
 
-### Lints and fixes files
-```
-npm run lint
+## Example
+```vue
+<template>
+  <div id="app">
+    <h1>Type img's url to show in lightbox component</h1>
+    <input v-model="imgUrl" type="text" size="100"/> <br/>
+    <button @click="openLightbox">
+      Click me
+    </button>
+    <simple-lightbox ref="lightbox"/>
+  </div>
+</template>
+
+<script>
+import SimpleLightbox from './SimpleLightbox.vue'
+
+export default {
+  name: 'app',
+  components: {
+    SimpleLightbox
+  },
+  data () {
+    return {
+      imgUrl: 'https://images.unsplash.com/photo-1559538619-79636b249e31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
+    }
+  },
+  methods: {
+    openLightbox () {
+      this.$refs.lightbox.show(this.imgUrl)
+    }
+  }
+}
+</script>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Available props:
+
+| Prop           | Type              | Value                                                           |
+| -------------- | ----------------- | --------------------------------------------------------------- |
+| prefix         | string            | **(Optional)** prefix image path (e.g. '/images/')              |
+
+## Available methods through $refs:
+| Method        | Arguments                                  | Description                                   |
+| ------------- | ---------------------------------------------- | ----------------------------------------- |
+| show          | img - path to image<br>altText - image caption | Displays Lightbox with given image        |
+| hide          | _none_                                         | Hides Lightbox                            |

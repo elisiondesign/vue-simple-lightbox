@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <simple-lightbox/>
     <h1>Type img's url to show in lightbox component</h1>
     <input v-model="imgUrl" type="text" size="100"/> <br/>
     <button @click="openLightbox">
