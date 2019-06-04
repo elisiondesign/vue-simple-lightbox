@@ -1,13 +1,13 @@
 {
-  "name": "vue-simple-lightbox",
+  "name": "vue-sole-lightbox",
   "version": "0.1.0",
   "description": "A minimalstic single-image lightbox made for Vue.js",
   "author": {
     "name": "Elision Design",
     "email": "info@elision.design"
   },
-  "repository": "https://github.com/elisiondesign/vue-simple-lightbox",
-  "bugs": "https://github.com/elisiondesign/vue-simple-lightbox/issues",
+  "repository": "https://github.com/elisiondesign/vue-sole-lightbox",
+  "bugs": "https://github.com/elisiondesign/vue-sole-lightbox/issues",
   "keywords": [
     "Vue",
     "Lightbox"
@@ -20,10 +20,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:npm": "vue-cli-service build --target lib --name SimpleLightbox src/SimpleLightbox.vue"
+    "build:npm": "vue-cli-service build --target lib --name SoleLightbox src/SoleLightbox.vue"
   },
-  "main": "dist/SimpleLightbox.umd.js",
-  "unpkg": "dist/SimpleLightbox.umd.min.js",
+  "main": "dist/SoleLightbox.umd.js",
+  "unpkg": "dist/SoleLightbox.umd.min.js",
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10"

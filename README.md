@@ -1,12 +1,14 @@
-# vue-simple-lightbox
+# vue-sole-lightbox
 This a simple and minimalistic zero-dependency Vue.js lightbox. The only aim is to fill the screen with a single image while dimming the surroundings. That's it.
 
 If you seek Lightbox component with navigation and customizable controls, this component is not a good choice.
 On the other hand, if you only need to highlight a single image at any given time, after a click for example, that this is a way to go.
 
+You can a demo on [codepen](https://codepen.io/sindael/pen/Ybgvre).
+
 ## Getting started
 ```
-npm install @elision/vue-simple-lighbox
+npm install @elision/vue-sole-lighbox
 ```
 
 ## Usage
@@ -21,13 +23,13 @@ You can include the component anywhere within the template. Just make sure that 
     </div>
 </template>
 
-import SimpleLightbox from 'vue-simple-lightbox'
+import SoleLightbox from 'vue-sole-lightbox'
 
 /* @vue/component */
 export default {
   components: {
     // ...
-    SimpleLightbox,
+    SoleLightbox,
   },
 }
 ```
@@ -46,12 +48,12 @@ export default {
 </template>
 
 <script>
-import SimpleLightbox from './SimpleLightbox.vue'
+import SoleLightbox from './SoleLightbox.vue'
 
 export default {
   name: 'app',
   components: {
-    SimpleLightbox
+    SoleLightbox
   },
   data () {
     return {

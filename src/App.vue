@@ -5,17 +5,17 @@
     <button @click="openLightbox">
       Click me
     </button>
-    <simple-lightbox ref="lightbox"/>
+    <sole-lightbox ref="lightbox"/>
   </div>
 </template>
 
 <script>
-import SimpleLightbox from './SimpleLightbox.vue'
+import SoleLightbox from './SoleLightbox.vue'
 
 export default {
   name: 'app',
   components: {
-    SimpleLightbox
+    SoleLightbox
   },
   data () {
     return {
