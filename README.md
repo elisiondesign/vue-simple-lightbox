@@ -4,11 +4,11 @@ This a simple and minimalistic zero-dependency Vue.js lightbox. The only aim is 
 If you seek Lightbox component with navigation and customizable controls, this component is not a good choice.
 On the other hand, if you only need to highlight a single image at any given time, after a click for example, that this is a way to go.
 
-You can a demo on [codepen](https://codepen.io/sindael/pen/Ybgvre).
+You can find a demo on [codepen](https://codepen.io/sindael/pen/Ybgvre).
 
 ## Getting started
 ```
-npm install @elision/vue-sole-lighbox
+npm install vue-sole-lighbox
 ```
 
 ## Usage
@@ -25,7 +25,6 @@ You can include the component anywhere within the template. Just make sure that 
 
 import SoleLightbox from 'vue-sole-lightbox'
 
-/* @vue/component */
 export default {
   components: {
     // ...
