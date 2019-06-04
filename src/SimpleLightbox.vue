@@ -53,7 +53,6 @@ export default {
     hide () {
       this.visible = false
     }
-
   }
 }
 </script>
