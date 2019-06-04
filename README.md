@@ -8,7 +8,7 @@ You can find a demo on [codepen](https://codepen.io/sindael/pen/Ybgvre).
 
 ## Getting started
 ```
-npm install vue-sole-lighbox
+npm i @elisiondesign/vue-sole-lightbox
 ```
 
 ## Usage

@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "A minimalstic single-image lightbox made for Vue.js",
   "author": {
-    "name": "Elision Design",
+    "name": "elision.design",
     "email": "info@elision.design"
   },
   "repository": "https://github.com/elisiondesign/vue-sole-lightbox",
@@ -13,7 +13,6 @@
     "Lightbox"
   ],
   "license": "MIT",
-  "private": false,
   "files": [
     "dist"
   ],
