@@ -1,5 +1,5 @@
 {
-  "name": "vue-sole-lightbox",
+  "name": "@elisiondesign/vue-sole-lightbox",
   "version": "0.1.1",
   "description": "A minimalstic single-image lightbox made for Vue.js",
   "author": {
